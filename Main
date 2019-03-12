@@ -1,0 +1,63 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+
+/*int main()
+{
+	int num1{ 200 };
+	int num2{ 100 };
+
+	int result{ 0 };
+
+	result = num1 + num2;
+	cout << num1 << "+" << num2 << "=" << result << endl;
+
+	result = num1 - num2;
+	cout << num1 << "-" << num2 << "=" << result << endl;
+
+	result = num1 * num2;
+	cout << num1 << "*" << num2 << "=" << result << endl;
+
+	result = num1 / num2;
+	cout << num1 << "/" << num2 << "=" << result << endl;
+
+	result = num1 % num2;								//reminder
+	cout << num1 << "%" << num2 << "=" << result << endl;
+
+}*/
+
+
+int main()
+{
+	const double usd_per_eur{ 1.19 };
+
+	cout << "Welcome to the EUR to USD converter" << endl;
+	cout << "Enter the valu in EUR: ";
+
+	double euros{ 0.0 };
+	double dollars{ 0.0 };
+
+	cin >> euros;
+	dollars = euros * usd_per_eur;
+
+	cout << euros << " euros is equivalent to " << dollars << " dollars" << endl;
+
+	const double soles_per_dollar{ 3.5 };
+
+	cout << "Welcome to the SOLES to USD converter" << endl;
+	cout << "Enter the valu in SOLES: ";
+
+	double soles{ 0.0 };
+
+
+	cin >> soles;
+	dollars = soles * soles_per_dollar;
+
+	cout << soles << " soles is equivalent to " << dollars << "dollars" << endl;
+
+	cout << endl;
+	return 0;
+
+
+}
